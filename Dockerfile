@@ -9,4 +9,4 @@ WORKDIR /elixirsse
 
 EXPOSE 8080
 
-ENTRYPOINT ["mix", "run", "start.exs"]
+ENTRYPOINT ["mix", "run", "wait.exs"]
