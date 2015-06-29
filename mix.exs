@@ -3,8 +3,8 @@ defmodule Hellowebmachine.Mixfile do
 
   def project do
     [app: :elixirsse,
-     version: "0.0.1",
-     elixir: "~> 1.0.0",
+     version: "0.0.2",
+     elixir: "~> 1.0",
      deps: deps]
   end
 
@@ -14,6 +14,7 @@ defmodule Hellowebmachine.Mixfile do
   end
 
   defp deps do
-    [{:ewebmachine,"1.0.0",[github: "awetzel/ewebmachine"]}]
+    [{:ewebmachine, "~> 1.0.0"},
+     {:webmachine, github: "basho/webmachine", tag: "1.10.6"}]
   end
 end
